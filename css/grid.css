@@ -1,0 +1,111 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+body{
+    background: #e9ecf4;
+    color: #000;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.conteiner{
+    width: 90%;
+    max-width: 1200px;
+    margin: 20px auto;
+    display: grid;
+    grid-gap: 20px;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(5, auto);
+    grid-template-areas: "header    header      header"
+                         "slaider   slaider     slaider"
+                         "contenido contenido   aside"
+                         "widget1   widget2     aside"
+                         "footer    footer      footer";
+}
+.header{
+    background-color: blue;
+    color: #ffffff;
+    height: 100px;  
+    display: grid;
+    text-align: center;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    grid-area: header;
+   
+}
+.slider{
+    background-color: aqua;
+    color: #000;
+    height: 300px;
+    display: grid;
+    grid-area: slaider;
+  
+}
+.contenido{
+    background-color: orange;
+    color: #ffffff;
+    text-align: center;
+    padding: 10px;
+    grid-area: contenido;
+   
+}
+.aside{ 
+    min-height: 100px;
+    background-color: red;
+    grid-area: aside;
+    
+}
+.widget1{
+   
+    background-color: green;
+    height: 100px;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    grid-area: widget1;
+}
+.widget2{
+   
+    background-color:yellow;
+    height: 100px;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    grid-area: widget2;
+}
+footer{
+   
+    background-color: purple;
+    height: 80px;
+    text-align: center;
+    grid-area: footer;
+}
+
+@media screen and (max-width : 768px){
+    .conteiner{
+        grid-template-areas: "header    header      header"
+                             "slaider   slaider     slaider"
+                             "contenido contenido   contenido"
+                             "aside     aside       aside"
+                             "widget1   widget1     widget2"
+                             "footer    footer      footer";
+}
+}
+@media only screen and (max-width: 600px){
+    .conteiner{
+        grid-template-areas: "header    header      header"                            
+                            "contenido contenido   contenido"
+                            "aside     aside       aside"
+                            "widget1   widget1     widget1"
+                            "widget2   widget2     widget2"
+                            "footer    footer      footer";
+        
+
+    }
+    .slider{
+        display: none;
+    }
+}
