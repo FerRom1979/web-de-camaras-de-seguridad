@@ -1,7 +1,4 @@
-*{
-    padding: 0;
-    margin: 0;
-}
+
 body{
     background: #e9ecf4;
     color: #000;
@@ -25,6 +22,7 @@ body{
 .header{
     background-color: blue;
     color: #ffffff;
+    margin-top: 30px;
     height: 100px;  
     display: grid;
     text-align: center;
