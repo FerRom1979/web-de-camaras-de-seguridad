@@ -2,7 +2,7 @@
 body{
     background: #e9ecf4;
     color: #000;
-    font-family: Arial, Helvetica, sans-serif;
+    font-family:  'Crete Round', serif;
 }
 
 .conteiner{
@@ -20,8 +20,9 @@ body{
                          "footer    footer      footer";
 }
 .header{
-    background-color: blue;
-    color: #ffffff;
+    background-color:red;
+    color: white;
+    border-radius: 10px;
     margin-top: 30px;
     height: 100px;  
     display: grid;
@@ -32,12 +33,14 @@ body{
     grid-area: header;
    
 }
+header h1{
+    font-weight: 700;
+   
+}
 .slider{
-    background-color: aqua;
-    color: #000;
-    height: 300px;
     display: grid;
     grid-area: slaider;
+    justify-items: center;
   
 }
 .contenido{
