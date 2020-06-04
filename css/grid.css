@@ -37,6 +37,8 @@ header h1{
     font-weight: 700;
    
 }
+.slider{
+    display: grid;
     grid-area: slaider;
     justify-items: center;
   
@@ -56,8 +58,7 @@ header h1{
     
 }
 .widget1{
-   
-    background-color: green;
+    background-color: #e9ecf4; 
     height: 100px;
     text-align: center;
     display: flex;
@@ -89,7 +90,7 @@ footer{
                              "slaider   slaider     slaider"
                              "contenido contenido   contenido"
                              "aside     aside       aside"
-                             "widget1   widget1     widget2"
+                             "widget1   widget2     widget2"
                              "footer    footer      footer";
 }
 }
